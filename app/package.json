@@ -1,0 +1,26 @@
+{
+  "name": "NexonSteamLauncher",
+  "version": "0.1.0",
+  "main": "index.html",
+  "node-main": "js/node-main.js",
+  "window": {
+    "title": "Nexon Steam Launcher",
+    "icon": "images/logo.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 500,
+    "height": 340,
+    "min_width": 500,
+    "min_height": 340,
+    "show": false,
+    "resizable": true,
+    "position": "center"
+  },
+  "single-instance": true,
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36",
+  "dependencies": {
+    "request": "~2.40.0",
+    "restify": "^3.0.1"
+  },
+  "node-remote" : "*.nexon.net,*.spring.io"
+}

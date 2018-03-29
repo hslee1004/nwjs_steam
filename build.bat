@@ -1,0 +1,1 @@
+nwbuild -p win32 -v 0.12.0 .\app

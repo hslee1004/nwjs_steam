@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nexon Steam Launcher</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ladda-themeless.min.css">
+
+  </head>
+  <body style="overflow: hidden">
+    <div class="row" style="height:40px;-webkit-app-region: drag">
+
+    </div>
+    <!-- div class="container">
+    <div class="col-md-4"   -->
+    <div id="nxsteam" class="container">
+
+    <div id="nxl-account-mapping" class="container">
+      <h4>Please enter your information</h4>
+        <form action="#" method="post">
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+              <div class="form-group">
+                <input type="email" class="form-control" id="inputName" placeholder="Enter your email address">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-md-4">
+
+              <div class="row">
+                <div class="col-xs-4 col-md-4">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="inputName" style="width:50px" placeholder="mm">
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-md-4">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="inputName" style="width:50px" placeholder="dd">
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-md-4">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="inputName" style="width:80px" placeholder="yyyy">
+                  </div>
+                </div>
+
+              </div>            
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <div class="form-group">
+                <!-- http://msurguy.github.io/ladda-bootstrap/ -->
+                <a id="btnPlayGame" href_="http://localhost:8080/api/nxl/install" class="btn btn-primary ladda-button" data-style="expand-right" data-size_="l" >Play Game
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="divider">
+
+          <div class="row">
+            <div style="margin-left:250px">
+              <a href="#step=login">Already have a Nexon Account?</a>       
+            </div>
+          </div>
+
+        </form>
+    </div>
+
+    <div id="nxl-login" class="container">
+      <h4>Nexon Account Log In</h4>    
+        <form action="#" method="post">
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+              <div class="form-group">
+                  <input type="email" class="form-control" id="txt_id" placeholder="Enter your email address" value="mantistest3">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+              <div class="form-group">
+                  <input type="password" class="form-control" id="txt_pw" value="1122qq">
+              </div>
+            </div>
+          </div>
+
+          <a id="btnLogin" class="btn btn-primary ladda-button" data-style="expand-right" data-size_="l" >Log In
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+          <!-- button type="submit" class="btn btn-primary">Log In
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </button  -->
+
+
+          <hr class="divider">
+
+          <div class="row">
+            <div style="margin-left:250px">
+              <a href="#step=account_mapping">I don't have a Nexon Account?</a>       
+            </div>
+          </div>
+
+        </form>
+    </div>
+
+    <div id="nxl-launch-game" class="container">
+      <h4>Please Wait....</h4>    
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          Ghost in the Shell is being launched!
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          If the game is not being launched, please click here.
+          </div>
+        </div>
+    </div>    
+
+    <div id="nxl-account-confirmation" class="container">
+      <h4>Account Information</h4>    
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          Each Nexon account can only be linked to one Steam account.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+
+          <span style="display:inline-block;">Your Nexon log in ID is</span>
+          <span style="display:inline-block;"><p id="txt_registered_id" class="text-primary"></p></span>
+
+          </div>
+        </div>
+        </br>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          Do you want to proceed?
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-xs-12 col-md-12" style="margin-left:200px;">
+            <!-- button type="submit" class="btn btn-primary">Yes</button>&nbsp;
+            <button type="submit" class="btn btn-primary">No</button   -->
+
+            <a id="btnYesPlayGame" class="btn btn-primary ladda-button" data-style="expand-right" data-size_="l" >Yes</a>&nbsp;
+            <a id="btnNoExit" class="btn btn-primary ladda-button" data-style="expand-right" data-size_="l" >No</a>
+
+          </div>
+        </div>
+    </div>   
+
+    <div id="nxl-email-verification" class="container">
+      <h4>Email Verification</h4>    
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          You still need to verify your email address.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          Log in to your email account and follow the instructions in the verification email we sent.
+          </div>
+        </div>
+        </br>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          Trouble verifying? Resend the verification code.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+          Already verified? Please log in
+          </div>
+        </div>
+    </div>
+
+    <div id="nxl-loading" class="container">
+        <div class="row">
+        </div>
+    </div>
+
+    </div>   
+    </div>  
+    <!-- /div>
+    </div   -->
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.konami.min.js"></script>
+    <script src="js/jquery.uriAnchor.js"></script>
+    <script src="js/jquery.event.gevent.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/ladda.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/nxsteam.js"></script>
+    <script src="js/nxsteam.shell.js"></script>
+    <script src="js/nxsteam.model.js"></script>
+    <script src="js/nxsteam.api.js"></script>
+    <script src="js/nxsteam.launcher.js"></script>
+    <script src="js/test_ns.js"></script>
+    <!-- script src="js/nxl_web.js"></script  -->
+    <script >
+      $(function () { nxsteam.initModule($('nxsteam'));});
+    </script>
+
+
+  </body>
+</html>

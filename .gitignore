@@ -1,0 +1,10 @@
+*.pyc
+*.log
+*.suo
+*.pyo
+*.sbr
+obj*/
+[Dd]ebug*/
+[Rr]elease*/
+build*/
+ipch*/
